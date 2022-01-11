@@ -1,0 +1,316 @@
+.login_body {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  background: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_animation {
+  position: absolute;
+  background: black;
+  background: #212121;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg_animation img {
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10rem;
+  left: 50%;
+  background: url("../../assets/Vector.png") no-repeat center/cover;
+}
+
+.login_container {
+  width: 75%;
+  height: 550px;
+  display: flex;
+  box-shadow: -14px 14px 17px -2px rgb(255 255 255 / 20%);
+  box-shadow: -14px 14px 70px -2px rgb(0 0 0 / 90%);
+  position: relative;
+  justify-content: space-between;
+}
+.sign-up {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  /* padding-left: 2rem; */
+  border: 0;
+  outline: 0;
+  background: #212121;
+  color: white;
+}
+.sign-up input {
+  color: white;
+}
+.sign-up input {
+  border: 2px solid slateblue;
+  border-radius: 30px;
+}
+.login .input-group input,
+.sign-up .input-group input {
+  padding: 0.7rem 1rem;
+  font-size: 17px;
+}
+
+form {
+  width: 100%;
+  padding: 2rem;
+}
+
+.input-group {
+  width: 100%;
+  margin: 1rem 0;
+}
+.input-group label {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+label:hover {
+  color: slateblue;
+}
+.input-group input {
+  margin: 0.3rem 0 0.8rem 0;
+  width: 90%;
+  padding: 0.7rem 0.3rem;
+  background: transparent;
+}
+
+input[type="submit"].submit-btn {
+  width: 90%;
+  padding: 0.7rem 0.3rem;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  color: white;
+  background: #33a0ed;
+  background: slateblue;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sign-up-img {
+  position: relative;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.5s;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+}
+
+.sign-up-img:hover {
+  transform: rotateY(-180deg);
+  z-index: -10;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding-left: 2rem; */
+  height: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: #181818;
+  background: transparent;
+  color: white;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+#cover {
+  width: 49.9%;
+  height: 100%;
+}
+.flip-book {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  perspective: 1500px;
+}
+.flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  color: #000;
+  transition: 1s;
+}
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5) 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #000;
+  background: #212121;
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 4.9rem;
+  cursor: pointer;
+  color: #fff;
+  left: -9.5rem;
+}
+.back-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#p1 {
+  z-index: 3;
+}
+#p2 {
+  z-index: 2;
+}
+#c1:checked ~ .flip-book #p1 {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+#c2:checked ~ .flip-book #p2 {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+/* =============================== */
+/* For Login Image */
+/* =============================== */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 3.5rem; */
+}
+.wrapper img {
+  width: 90%;
+  margin-right: 2rem;
+}
+
+/* =============================== */
+/* For Sign Up Image */
+/* =============================== */
+
+#image_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#image_container img {
+  width: 100%;
+  margin-top: 4rem;
+}
+#man {
+  position: absolute;
+  top: -3rem;
+  width: 80%;
+  left: -3rem;
+  animation: bike 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+#hat {
+  animation: hat_anim 1s ease-in-out infinite alternate;
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  z-index: 5;
+}
+#right_wheel {
+  width: 30%;
+  position: absolute;
+  bottom: 0rem;
+  right: 5rem;
+  animation: wheel 2s infinite linear;
+}
+#left_wheel {
+  width: 30%;
+  position: absolute;
+  left: 2rem;
+  bottom: 0rem;
+  animation: wheel 2s infinite linear;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes bike {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(20deg);
+  }
+}
+@keyframes hat_anim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(40%);
+  }
+}
+
+/* #07080d #0e0f12 */
